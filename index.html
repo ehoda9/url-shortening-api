@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>Shortly URL shortening API</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./images/logo.svg" alt="" class="logo" />
+      <div class="menu-b" id="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu_list">Features</li>
+          <li class="menu_list">Pricing</li>
+          <li class="menu_list">Resources</li>
+        </ul>
+        <div class="input_group">
+          <button class="btn login">Login</button>
+          <button class="btn register">Sign Up</button>
+        </div>
+      </nav>
+    </header>
+    <main class="app">
+      <div class="landing">
+        <div class="section">
+          <h1 class="title">More than just shorter links</h1>
+          <p class="desc">
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <button class="btn get_start">Get Started</button>
+        </div>
+        <div class="section">
+          <img
+            src="./images/illustration-working.svg"
+            alt="illustration-working"
+            class="landing-img"
+          />
+        </div>
+      </div>
+
+      <div class="track">
+        <div class="form">
+          <label for="short" id="msg"></label>
+          <input
+            type="text"
+            placeholder="Shorten a link here..."
+            name="short"
+            id="short"
+          />
+          <button class="btn short-it">Shorten It!</button>
+        </div>
+        <div class="loadingspinner"></div>
+        <button class="btn reset">Clear</button>
+        <div class="popup">
+          <h1>Url Copied successfully</h1>
+          <p>http://www.facebook.com</p>
+        </div>
+        <div class="links-group"></div>
+        <h1 class="title">Advanced Statistics</h1>
+        <p class="desc">
+          Track how your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
+        <div class="cols">
+          <div class="col">
+            <div class="col-img">
+              <img
+                src="./images/icon-brand-recognition.svg"
+                alt="track img"
+                class="img"
+              />
+            </div>
+            <h2 class="col-title">Brand Recognition</h2>
+            <p class="col-desc">
+              Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your
+              content.
+            </p>
+          </div>
+
+          <div class="col">
+            <div class="col-img">
+              <img
+                src="./images/icon-detailed-records.svg"
+                alt="track img"
+                class="img"
+              />
+            </div>
+            <h2 class="col-title">Detailed Records</h2>
+            <p class="col-desc">
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions.
+            </p>
+          </div>
+
+          <div class="col">
+            <div class="col-img fix-col">
+              <img
+                src="./images/icon-fully-customizable.svg"
+                alt="track img"
+                class="img"
+              />
+            </div>
+            <h2 class="col-title">Fully Customizable</h2>
+            <p class="col-desc">
+              Improve brand awareness and content discoverability through
+              customizable links, supercharging audience engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="subFooter">
+        <h1 class="title">Boost your links today</h1>
+        <button class="btn get_start">Get Started</button>
+      </div>
+      <div class="mainFooter">
+        <h1 class="subLogo">Shortly</h1>
+        <ul class="submenu">
+          <li class="submenu-item">
+            Features
+            <ul class="subsubmenu">
+              <li class="subsubmenu-item">Link Shortening</li>
+              <li class="subsubmenu-item">Branded Links</li>
+              <li class="subsubmenu-item">Analytics</li>
+            </ul>
+          </li>
+          <li class="submenu-item">
+            Resources
+            <ul class="subsubmenu">
+              <li class="subsubmenu-item">Blog</li>
+              <li class="subsubmenu-item">Developers</li>
+              <li class="subsubmenu-item">Support</li>
+            </ul>
+          </li>
+          <li class="submenu-item">
+            Company
+            <ul class="subsubmenu">
+              <li class="subsubmenu-item">About</li>
+              <li class="subsubmenu-item">Our Team</li>
+              <li class="subsubmenu-item">Careers</li>
+              <li class="subsubmenu-item">Contact</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="social">
+          <img
+            src="./images/icon-facebook.svg"
+            alt="icon-social"
+            class="icon"
+          />
+          <img src="./images/icon-twitter.svg" alt="icon-social" class="icon" />
+          <img
+            src="./images/icon-pinterest.svg"
+            alt="icon-social"
+            class="icon"
+          />
+          <img
+            src="./images/icon-instagram.svg"
+            alt="icon-social"
+            class="icon"
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
