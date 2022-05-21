@@ -8,6 +8,7 @@ const popup = document.querySelector('.popup');
 const burger = document.querySelector('#menu');
 const nav = document.querySelector('.nav');
 const api = 'https://api.shrtco.de/v2/shorten?url=';
+/* End Global vars */
 burger.addEventListener('click', () => {
     burger.classList.toggle('active');
     nav.classList.toggle('active');
@@ -17,7 +18,7 @@ reset.addEventListener('click', () => {
     reset.style.opacity = "0";
 });
 
-/* Global vars */
+
 shortBtn.addEventListener("click", shortNow);
 function shortNow() {
     if (link.value === "") {
@@ -44,7 +45,7 @@ function shortNow() {
                 let res = await fetch(api + url);
                 return await res.json();
             } catch (err) {
-                console.log(err);
+                throw err;
             }
         };
         let data = shorturl();
@@ -71,7 +72,7 @@ function shortNow() {
                 });
             });
         }).catch(err => {
-            console.error(err);
+           throw err;
         });
     }
 }
